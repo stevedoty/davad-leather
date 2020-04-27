@@ -3,8 +3,8 @@ import React from 'react';
 
 
 
-const HomePage = () => (
-    <div className="home-page">
+const GalleryPage = () => (
+    <div className="gallery-page">
         <div className="directory-menu">
             <div className="menu-item">
                 <div className="background"></div>
@@ -52,4 +52,4 @@ const HomePage = () => (
     </div>
 )
 
-export default HomePage;
+export default GalleryPage;

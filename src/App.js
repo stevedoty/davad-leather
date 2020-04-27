@@ -3,10 +3,11 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Header from './components/header/header.js';
-import HomePage from './pages/homepage/homepage.js';
-import AboutPage from './pages/aboutpage/aboutpage.js';
-import ContactPage from './pages/contactpage/contactpage.js';
+import LandingPage from './pages/landingpage/landingpage.js';
+import GalleryPage from './pages/gallerypage/gallerypage.js';
+import StoryPage from './pages/storypage/storypage.js';
 import CheckoutPage from './pages/checkoutpage/checkoutpage.js';
+import Footer from './components/footer/footer.js';
 
 
 
@@ -20,12 +21,12 @@ class App extends React.Component {
         <div className="App">
             <Header/>
             <Switch>
-                <Route exact path='/' component={HomePage}/>
-                <Route path='/story' component={AboutPage}/>
-                <Route path='/contact' component={ContactPage}/>
+                <Route exact path='/' component={LandingPage}/>
+                <Route path='/gallery' component={GalleryPage}/>
+                <Route path='/story' component={StoryPage}/>
                 <Route exact path='/checkout' component={CheckoutPage}/>
             </Switch>
-            <div className="footer">footer</div>
+            <Footer className="footer"/>
         </div>
       );
     }

@@ -3,10 +3,10 @@ import React from 'react';
 
 
 
-const ContactPage = () => (
-    <div className="contact-page">
+const Footer = () => (
+    <div className="footer">
         <div className="background-image">
-            <div className="contact-image-content">
+            <div className="footer-image-content">
                 <h1>Contact Me</h1>
                 <h5>If you would like a custom piece then contact me and together we can satisfy your needs.</h5>
             </div>
@@ -19,4 +19,4 @@ const ContactPage = () => (
     </div>
 )
 
-export default ContactPage;
+export default Footer;

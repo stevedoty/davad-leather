@@ -7,28 +7,43 @@
 }
 /*========header========================*/
 .header{
+
     height: 50px;
     background-color: white;
-    color: black;
     display: flex;
     position:relative;
 }
-.header div{
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header-item{
     flex-direction: row;
     width:100%;
     padding:1% 0;
     margin: auto;
 }
 .shopping-icon {
-    position: absolute;
-    right:10%;
-    top:25%;
     align-items: center;
     cursor: pointer;
     width: 24px;
     height: 24px;
 }
-/*========homepage========================*/
+/*========landingpage========================*/
+.landing-page{
+    border: 1px solid black;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: teal;
+    padding: 100px;
+}
+.summary{
+    width:100%;
+    height: 75%;
+}
+/*========gallery========================*/
 .home-page{
   display: flex;
   flex-direction: column;
@@ -75,10 +90,10 @@
   font-weight: lighter;
   font-size: 16px;
 }
-/*========aboutpage========================*/
-.about-page{
-
-    background-color: teal;
+/*========story========================*/
+.story-page{
+    color: white;
+    background-color: black;
     border: 1px solid black;
   height: 500px;
   display: flex;
@@ -88,32 +103,6 @@
 }
 .backstory{
     margin: 100px 25%;
-}
-/*========contactpage========================*/
-.contact-page{
-    border: 1px solid black;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px auto;
-}
-.background-image{
-    width:100%;
-    height: 75%;
-    background-color: tan;
-}
-.contact-image-content{
-    margin: 100px 25%;
-}
-.contacts{
-    width:100%;
-    display: flex;
-}
-.contact{
-    flex-direction: row;
-    width:100%;
-    padding-top: 50px;
 }
 /*========checkoutpage========================*/
 .checkout-page {
@@ -136,7 +125,29 @@
   text-transform: capitalize;
   width: 23%;
 }
-
-
+/*========footer========================*/
+.footer{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-image{
+    width:100%;
+    height: 75%;
+    background-color: tan;
+}
+.footer-image-content{
+    margin: 50px 25%;
+}
+.contacts{
+    width:100%;
+    display: flex;
+}
+.contact{
+    flex-direction: row;
+    width:100%;
+    padding: 25px;
+}
 
 

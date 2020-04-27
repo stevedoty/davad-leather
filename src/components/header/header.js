@@ -5,16 +5,30 @@ import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
 const Header = () => (
     <div className="header">
-        <Link to='/'>
-            <div className="">H</div>
-        </Link>
-
-        <Link to='/story'>
-            <div className="">My Story</div>
-        </Link>
-        <div className="">Search</div>
-        <div className="">Sign In</div>
-        <ShoppingIcon className="shopping-icon"/>
+        <div className="header-item">
+            <Link to='/'>
+                <div className="">Home</div>
+            </Link>
+        </div>
+        <div className="header-item">
+            <Link to='/gallery'>
+                <div className="">Gallery</div>
+            </Link>
+        </div>
+        <div className="header-item">
+            <Link to='/story'>
+                <div className="">My Story</div>
+            </Link>
+        </div>
+        <div className="header-item">
+            <div className="">Search</div>
+        </div>
+        <div className="header-item">
+            <div className="">Sign In</div>
+        </div>
+        <div className="header-item">
+            <ShoppingIcon className="shopping-icon"/>
+        </div>
     </div>
 )
 
