@@ -1,24 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
 const Header = () => (
+  <div className="header-container">
     <div className="header">
         <div className="header-item">
-            <Link to='/'>
+            <a href="#landing-page">
                 <div className="">Home</div>
-            </Link>
+            </a>
         </div>
         <div className="header-item">
-            <Link to='/gallery'>
+            <a href="#gallery-page">
                 <div className="">Gallery</div>
-            </Link>
+            </a>
         </div>
         <div className="header-item">
-            <Link to='/story'>
+            <a href="#story-page">
                 <div className="">My Story</div>
-            </Link>
+            </a>
         </div>
         <div className="header-item">
             <div className="">Search</div>
@@ -30,6 +30,7 @@ const Header = () => (
             <ShoppingIcon className="shopping-icon"/>
         </div>
     </div>
+  </div>
 )
 
 export default Header;

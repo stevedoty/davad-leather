@@ -4,7 +4,7 @@ import React from 'react';
 
 
 const GalleryPage = () => (
-    <div className="gallery-page">
+    <div id="gallery-page">
         <div className="directory-menu">
             <div className="menu-item">
                 <div className="background"></div>

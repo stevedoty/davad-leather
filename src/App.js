@@ -3,10 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Header from './components/header/header.js';
-import LandingPage from './pages/landingpage/landingpage.js';
-import GalleryPage from './pages/gallerypage/gallerypage.js';
-import StoryPage from './pages/storypage/storypage.js';
-import CheckoutPage from './pages/checkoutpage/checkoutpage.js';
+import Body from './components/body/body.js';
 import Footer from './components/footer/footer.js';
 
 
@@ -20,12 +17,7 @@ class App extends React.Component {
       return (
         <div className="App">
             <Header/>
-            <Switch>
-                <Route exact path='/' component={LandingPage}/>
-                <Route path='/gallery' component={GalleryPage}/>
-                <Route path='/story' component={StoryPage}/>
-                <Route exact path='/checkout' component={CheckoutPage}/>
-            </Switch>
+            <Body />
             <Footer className="footer"/>
         </div>
       );

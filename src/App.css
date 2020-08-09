@@ -6,8 +6,11 @@
     padding:5%;
 }
 /*========header========================*/
+.header-container{
+  width: 100%;
+  position: fixed;
+}
 .header{
-
     height: 50px;
     background-color: white;
     display: flex;
@@ -29,21 +32,28 @@
     width: 24px;
     height: 24px;
 }
+/*========body========================*/
+
 /*========landingpage========================*/
-.landing-page{
-    border: 1px solid black;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#landing-page{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: teal;
     padding: 100px;
 }
 .summary{
-    width:100%;
-    height: 75%;
+  padding: 5% 10% 5% 10%;
+    background-color: darkgrey;
+    color: white;
+    font-style: italic;
 }
 /*========gallery========================*/
+#gallery-page{
+  padding-top:240px;
+  padding-bottom:240px;
+}
 .home-page{
   display: flex;
   flex-direction: column;
@@ -55,6 +65,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+    padding: 10px 0 0 0;
 }
 .menu-item {
     background-color: darkgrey;
@@ -64,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border-radius: 5px;
   margin: 0 7.5px 15px;
   overflow: hidden;
 }
@@ -75,7 +86,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     background-color: white;
     opacity: 0.7;
     position: absolute;
@@ -91,18 +101,18 @@
   font-size: 16px;
 }
 /*========story========================*/
-.story-page{
-    color: white;
-    background-color: black;
-    border: 1px solid black;
-  height: 500px;
+#story-page{
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
 }
 .backstory{
-    margin: 100px 25%;
+    margin: 100px 5%;
 }
 /*========checkoutpage========================*/
 .checkout-page {
@@ -115,11 +125,11 @@
   border: 1px solid black;
 }
 .checkout-header {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid darkgrey;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgrey;
 }
 .header-block {
   text-transform: capitalize;
@@ -127,7 +137,7 @@
 }
 /*========footer========================*/
 .footer{
-  height: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,5 +159,3 @@
     width:100%;
     padding: 25px;
 }
-
-
