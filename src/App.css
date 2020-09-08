@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: tan;
+    /* background-color: tan; */
     padding: 100px;
 }
 .summary{
