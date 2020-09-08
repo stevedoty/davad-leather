@@ -1,6 +1,4 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 import Header from './components/header/header.js';
 import Body from './components/body/body.js';
@@ -16,7 +14,6 @@ class App extends React.Component {
 
       return (
         <div className="App">
-        <i className="fas fa-home"></i>
             <Header className="header"/>
             <Body className="body"/>
             <Footer className="footer"/>

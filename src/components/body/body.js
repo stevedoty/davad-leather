@@ -6,6 +6,7 @@ import StoryPage from '../../pages/storypage/storypage.js';
 import CheckoutPage from '../../pages/checkoutpage/checkoutpage.js';
 
 const Body = () => (
+  <div className="body-container">
     <div className="body">
         <div className="body-item">
             <LandingPage />
@@ -14,6 +15,7 @@ const Body = () => (
             <CheckoutPage />
         </div>
     </div>
+  </div>
 )
 
 export default Body;

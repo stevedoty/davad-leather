@@ -21,6 +21,9 @@ const Header = () => (
             </a>
         </div>
         <div className="header-item">
+            <div className="logo"><b>DHL</b></div>
+        </div>
+        <div className="header-item">
             <a href="#search-page">
               <FontAwesomeIcon icon={faSearch} color="white"/>
             </a>
