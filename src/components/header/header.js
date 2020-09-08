@@ -1,33 +1,39 @@
 import React from 'react';
-
-import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faImage, faBookOpen, faSearch, faUserCircle, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => (
   <div className="header-container">
     <div className="header">
         <div className="header-item">
             <a href="#landing-page">
-                <div className="">Home</div>
+              <FontAwesomeIcon icon={faHome} color="white"/>
             </a>
         </div>
         <div className="header-item">
             <a href="#gallery-page">
-                <div className="">Gallery</div>
+              <FontAwesomeIcon icon={faImage} color="white"/>
             </a>
         </div>
         <div className="header-item">
             <a href="#story-page">
-                <div className="">My Story</div>
+              <FontAwesomeIcon icon={faBookOpen} color="white"/>
             </a>
         </div>
         <div className="header-item">
-            <div className="">Search</div>
+            <a href="#search-page">
+              <FontAwesomeIcon icon={faSearch} color="white"/>
+            </a>
         </div>
         <div className="header-item">
-            <div className="">Sign In</div>
+            <a href="#user-page">
+              <FontAwesomeIcon icon={faUserCircle} color="white"/>
+            </a>
         </div>
         <div className="header-item">
-            <ShoppingIcon className="shopping-icon"/>
+            <a href="#cart-page">
+              <FontAwesomeIcon icon={faShoppingBag} color="white"/>
+            </a>
         </div>
     </div>
   </div>

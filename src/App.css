@@ -9,10 +9,11 @@
 .header-container{
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 .header{
     height: 50px;
-    background-color: white;
+    background-color: black;
     display: flex;
     position:relative;
 }
@@ -26,12 +27,7 @@
     padding:1% 0;
     margin: auto;
 }
-.shopping-icon {
-    align-items: center;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
+
 /*========body========================*/
 
 /*========landingpage========================*/
@@ -40,19 +36,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: teal;
+    background-color: tan;
     padding: 100px;
 }
 .summary{
+  border-radius: 2px;
   padding: 5% 10% 5% 10%;
-    background-color: darkgrey;
-    color: white;
+    background-color: white;
+    color: tan;
     font-style: italic;
 }
 /*========gallery========================*/
 #gallery-page{
-  padding-top:240px;
-  padding-bottom:240px;
+  padding-top:60px;
+  padding-bottom:40px;
 }
 .home-page{
   display: flex;
@@ -102,23 +99,21 @@
 }
 /*========story========================*/
 #story-page{
-  color: white;
-  background-color: black;
-  border: 1px solid black;
-  height: 700px;
+  color: black;
+  background-color: darkgrey;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding: 100px 5% 100px 5%;
 }
-.backstory{
-    margin: 100px 5%;
-}
+
 /*========checkoutpage========================*/
 .checkout-page {
+  display: block;
   width: 90%;
   min-height: 90vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px auto;
